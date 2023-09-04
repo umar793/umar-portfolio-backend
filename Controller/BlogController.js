@@ -13,7 +13,7 @@ module.exports = {
       }
       const mycloud = await cloudinary.v2.uploader.upload(req.body.BlogImage, {
         folder: "sample",
-        width: 150,
+        width: 1000,
         crop: "scale",
       });
       await BlogModel.create({
